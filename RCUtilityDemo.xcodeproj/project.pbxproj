@@ -19,10 +19,19 @@
 		51C863CC25DF871600FFDEAD /* RCUtility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51C863C425DF871600FFDEAD /* RCUtility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51C863DB25DF955D00FFDEAD /* RCFirst.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C863D925DF955D00FFDEAD /* RCFirst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51C863DC25DF955D00FFDEAD /* RCFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C863DA25DF955D00FFDEAD /* RCFirst.m */; };
+		51D33FA525E0FE9F0065B360 /* RCUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D33FA425E0FE9F0065B360 /* RCUtilityTests.m */; };
+		51D33FA725E0FE9F0065B360 /* RCUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C863C425DF871600FFDEAD /* RCUtility.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		51C863C925DF871600FFDEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51C8639A25DF5E2600FFDEAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51C863C325DF871600FFDEAD;
+			remoteInfo = RCUtility;
+		};
+		51D33FA825E0FE9F0065B360 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51C8639A25DF5E2600FFDEAD /* Project object */;
 			proxyType = 1;
@@ -63,6 +72,9 @@
 		51C863C725DF871600FFDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C863D925DF955D00FFDEAD /* RCFirst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCFirst.h; sourceTree = "<group>"; };
 		51C863DA25DF955D00FFDEAD /* RCFirst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCFirst.m; sourceTree = "<group>"; };
+		51D33FA225E0FE9F0065B360 /* RCUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D33FA425E0FE9F0065B360 /* RCUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCUtilityTests.m; sourceTree = "<group>"; };
+		51D33FA625E0FE9F0065B360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51D33F9F25E0FE9F0065B360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D33FA725E0FE9F0065B360 /* RCUtility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +109,7 @@
 			children = (
 				51C863A425DF5E2600FFDEAD /* RCUtilityDemo */,
 				51C863C525DF871600FFDEAD /* RCUtility */,
+				51D33FA325E0FE9F0065B360 /* RCUtilityTests */,
 				51C863A325DF5E2600FFDEAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +119,7 @@
 			children = (
 				51C863A225DF5E2600FFDEAD /* RCUtilityDemo.app */,
 				51C863C425DF871600FFDEAD /* RCUtility.framework */,
+				51D33FA225E0FE9F0065B360 /* RCUtilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +151,15 @@
 				51C863DA25DF955D00FFDEAD /* RCFirst.m */,
 			);
 			path = RCUtility;
+			sourceTree = "<group>";
+		};
+		51D33FA325E0FE9F0065B360 /* RCUtilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				51D33FA425E0FE9F0065B360 /* RCUtilityTests.m */,
+				51D33FA625E0FE9F0065B360 /* Info.plist */,
+			);
+			path = RCUtilityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +214,24 @@
 			productReference = 51C863C425DF871600FFDEAD /* RCUtility.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		51D33FA125E0FE9F0065B360 /* RCUtilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51D33FAC25E0FE9F0065B360 /* Build configuration list for PBXNativeTarget "RCUtilityTests" */;
+			buildPhases = (
+				51D33F9E25E0FE9F0065B360 /* Sources */,
+				51D33F9F25E0FE9F0065B360 /* Frameworks */,
+				51D33FA025E0FE9F0065B360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51D33FA925E0FE9F0065B360 /* PBXTargetDependency */,
+			);
+			name = RCUtilityTests;
+			productName = RCUtilityTests;
+			productReference = 51D33FA225E0FE9F0065B360 /* RCUtilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +245,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					51C863C325DF871600FFDEAD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					51D33FA125E0FE9F0065B360 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -215,6 +267,7 @@
 			targets = (
 				51C863A125DF5E2600FFDEAD /* RCUtilityDemo */,
 				51C863C325DF871600FFDEAD /* RCUtility */,
+				51D33FA125E0FE9F0065B360 /* RCUtilityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +284,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		51C863C225DF871600FFDEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D33FA025E0FE9F0065B360 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,6 +319,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51D33F9E25E0FE9F0065B360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D33FA525E0FE9F0065B360 /* RCUtilityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -266,6 +334,11 @@
 			isa = PBXTargetDependency;
 			target = 51C863C325DF871600FFDEAD /* RCUtility */;
 			targetProxy = 51C863C925DF871600FFDEAD /* PBXContainerItemProxy */;
+		};
+		51D33FA925E0FE9F0065B360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51C863C325DF871600FFDEAD /* RCUtility */;
+			targetProxy = 51D33FA825E0FE9F0065B360 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,6 +559,38 @@
 			};
 			name = Release;
 		};
+		51D33FAA25E0FE9F0065B360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RCUtilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crx.RCUtilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51D33FAB25E0FE9F0065B360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RCUtilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crx.RCUtilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +617,15 @@
 			buildConfigurations = (
 				51C863CE25DF871600FFDEAD /* Debug */,
 				51C863CF25DF871600FFDEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51D33FAC25E0FE9F0065B360 /* Build configuration list for PBXNativeTarget "RCUtilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D33FAA25E0FE9F0065B360 /* Debug */,
+				51D33FAB25E0FE9F0065B360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
