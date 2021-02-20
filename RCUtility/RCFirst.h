@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RCFirst : NSObject
 
 + (void)printAString;
++ (NSString *)returnHello;
 
 @end
 

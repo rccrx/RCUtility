@@ -6,9 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <RCUtility/RCFirst.h>
 #import "RCFirst.h"
-#import "RCUtility.h"
 
 
 @interface AppDelegate ()

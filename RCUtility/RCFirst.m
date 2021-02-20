@@ -13,4 +13,8 @@
     NSLog(@"hello");
 }
 
++ (NSString *)returnHello {
+    return @"hello";
+}
+
 @end
